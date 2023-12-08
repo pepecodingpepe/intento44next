@@ -10,19 +10,21 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header style={{ backgroundColor: '#ffffff' }} >
       <div className="flex justify-between items-center p-4">
         <div>
           <Link href="/">
-            <img src="/logo.png" alt="Logo" className="w-40 h-auto" />
+            <img style={{ padding: '10px' }}
+            src="https://iili.io/JIrTVu1.png"  alt="Logo" className="w-80 h-auto" />
           </Link>
         </div>
         <nav className={`flex ${isMenuOpen ? 'flex-col' : 'hidden md:flex'}`}>
-          <Link href="/about" className="nav-link">Acerca de Nosotros</Link>
-          <Link href="/services" className="nav-link">Nuestros Servicios</Link>
-          <Link href="/contact" className="nav-link">Trabajemos Juntos</Link>
-          <Link href="/portfolio" className="nav-link">Portafolio</Link>
+          <Link href="/about"  className="nav-linkA">Acerca de Nosotros</Link>
+          <Link href="/services"  className="nav-linkB">Productos & Servicios</Link>
+          <Link href="/portfolio"  className="nav-linkC">Portafolio</Link>
           <Link href="/clients" className="nav-link">Nuestros Clientes</Link>
+          <Link href="/contact" className="nav-link2">Manos a la Obra</Link>
+
         </nav>
         <button
           className="md:hidden"
