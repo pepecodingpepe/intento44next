@@ -10,16 +10,17 @@ const Header = () => {
   };
 
   return (
-    <header style={{ backgroundColor: '#ffffff' }} >
+    <header className="bg-gradient-to-r from-white to-slate-100" >
       <div className="flex justify-between items-center p-4">
         <div>
           <Link href="/">
-            <img style={{ padding: '10px' }}
-            src="https://iili.io/JIrTVu1.png"  alt="Logo" className="w-80 h-auto" />
+            <img style={{ padding: '10px'
+             }}
+            src="https://iili.io/JIrTVu1.png"  alt="Logo" className="w-96 h-auto" />
           </Link>
         </div>
         <nav className={`flex ${isMenuOpen ? 'flex-col' : 'hidden md:flex'}`}>
-          <Link href="/about"  className="nav-linkA">Acerca de Nosotros</Link>
+          <Link href="/"  className="nav-linkA">Home</Link>
           <Link href="/services"  className="nav-linkB">Productos & Servicios</Link>
           <Link href="/portfolio"  className="nav-linkC">Portafolio</Link>
           <Link href="/clients" className="nav-link">Nuestros Clientes</Link>
@@ -27,7 +28,7 @@ const Header = () => {
 
         </nav>
         <button
-          className="md:hidden"
+          className="md:hidden font-bold bg-cyan-500 text-white px-4 py-2 rounded-xl "
           onClick={toggleMenu}
         >
           {isMenuOpen ? 'Cerrar' : 'Menú'}
