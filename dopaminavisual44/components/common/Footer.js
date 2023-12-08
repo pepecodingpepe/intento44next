@@ -1,5 +1,6 @@
 // /components/common/Footer.js
 const Footer = () => {
+  
   return (
     <footer className="bg-gray-800 text-white p-8">
       <div className="flex justify-between items-center">

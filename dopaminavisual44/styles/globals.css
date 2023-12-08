@@ -3,25 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-color-rgb: 0, 0, 0; /* Color del texto */
+  --background-start-color-rgb: 214, 219, 220; /* Color de fondo de inicio */
+  --background-end-color-rgb: 255, 255, 255; /* Color de fondo final */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text-color-rgb: 255, 255, 255; /* Color del texto en modo oscuro */
+    --background-start-color-rgb: 0, 0, 0; /* Color de fondo de inicio en modo oscuro */
+    --background-end-color-rgb: 0, 0, 0; /* Color de fondo final en modo oscuro */
   }
 }
 
+
 body {
+  
+   font-family: 'roboto', sans-serif;
+  
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      #ffffff
     )
-    rgb(var(--background-start-rgb));
+    #e2e2e2;
+}
+
+/* FORMATO PARA BARRA DE NAVEGACIÓN */
+
+.nav-link {
+  padding: 0.5rem 1rem; /* Agrega padding */
+  margin-right: 1rem; /* Agrega margen derecho entre elementos */
+  color: #333; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+  font-size: 1rem; /* Tamaño de la fuente */
+}
+
+.nav-link:hover {
+  color: #0070f3; /* Cambia el color del texto al pasar el mouse sobre el enlace */
 }
