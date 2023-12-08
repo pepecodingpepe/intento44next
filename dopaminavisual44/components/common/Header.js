@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-white to-slate-100" >
+    <header className="tracking-wide shadow-lg bg-gradient-to-r from-white to-slate-100" >
       <div className="flex justify-between items-center p-4">
         <div>
           <Link href="/">
@@ -24,7 +24,7 @@ const Header = () => {
           <Link href="/services"  className="nav-linkB">Productos & Servicios</Link>
           <Link href="/portfolio"  className="nav-linkC">Portafolio</Link>
           <Link href="/clients" className="nav-link">Nuestros Clientes</Link>
-          <Link href="/contact" className="nav-link2">Manos a la Obra</Link>
+          <Link href="/contact" className="nav-link2 ">Manos a la Obra</Link>
 
         </nav>
         <button

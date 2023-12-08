@@ -22,13 +22,13 @@ body {
    font-family: 'roboto', sans-serif;
   
 
-  color: rgb(var(--foreground-rgb));
+  color: #3d3d3c ;
   background: linear-gradient(
-      to bottom,
+      to left,
       transparent,
-      #ffffff
+      #f1f1f1
     )
-    #e2e2e2;
+    #d5dfe6;
 }
 
 /* FORMATO PARA BARRA DE NAVEGACIÓN */
