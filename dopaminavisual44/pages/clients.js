@@ -1,6 +1,8 @@
 
 import Header from '../components/common/Header';
 
+import Footer from '../components/common/Footer';
+
 const Clients = () => {
   return (
     <div>
@@ -10,6 +12,7 @@ const Clients = () => {
         <p className="mb-4">Aquí va el contenido del blog sobre tu negocio de consultoría.</p>
         {/* Agrega más párrafos, imágenes y otros elementos según sea necesario */}
       </section>
+      <Footer />
     </div>
   );
 };

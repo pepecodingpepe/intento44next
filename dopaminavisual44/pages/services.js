@@ -1,6 +1,7 @@
 // /pages/services.js
 import Header from '../components/common/Header';
 import ServiceCard from '../components/home/ServiceCard';
+import Footer from '../components/common/Footer';
 
 const Services = () => {
   return (
@@ -12,6 +13,7 @@ const Services = () => {
         <ServiceCard title="Servicio 2" description="Aquí va el detalle" />
         {/* Agrega más ServiceCard según sea necesario */}
       </section>
+      <Footer />
     </div>
   );
 };
