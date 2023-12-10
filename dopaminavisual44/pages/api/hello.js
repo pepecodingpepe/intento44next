@@ -3,3 +3,6 @@
 export default function handler(req, res) {
   res.status(200).json({ name: 'John Doe' })
 }
+
+if (typeof window === 'undefined') {
+  const destroy = require('destroy');}
